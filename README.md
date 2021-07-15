@@ -65,12 +65,31 @@ Chromosome	Position	Start	End	Log2R	SegMean	Class
 1	120208	110209	130208	-0.389784914264831	-0.642331505481395	OUT
 ```
 The default normalization method for **SARAseq** is CODEX2 PLF normalization, the following procedure generate a **log2R-PLF** data matrix for all samples.
-
+```r
+normObj.null <- normalize_null(Y_qc = Y_qc,
+                               gc_qc = gc_qc,
+                               K = 1:5, N = N)
+Yhat.null <- normObj.null$Yhat
+log2R-PLF=log2(Y_qc/Yhat.null)
+```
 ### CNV calling
 Run CORRseq and SARAseq with log2R-MED and log2R-PLF
+```r
+CORRseq(log2R-MED, map)
+SARAseq(log2R-PLF, map)
+```
 
 
 The output file is tab delimited and has 9 columns with rows corresponding to CNV events. The columns include sample names, chromosome, CNV start marker, CNV end marker, CNV start position, CNV end position, CNV length in b, CNV length in markers, CNV status (deletion or duplication).
-
-
-{"mode":"full","isActive":false}
+```r
+1	1	rs3765736	chr1_3696000_C_T	3616601	3696000	79399	18	del
+1	1	chr1_6504890_C_T	rs2986739	6504890	6548056	43166	6	del
+1	1	chr1_10674492_C_T	chr1_10766389_C_T	10674492	10766389	91897	44	del
+1	1	chr1_10871049_A_C	chr1_10879164_C_T	10871049	10879164	8115	6	del
+1	1	chr1_11002579_A_C	exm13826	11002579	11009716	7137	6	del
+1	1	rs9430624	rs3737967	11763677	11847449	83772	48	del
+1	1	rs848428	chr1_12923108_C_T	12866590	12923108	56518	11	del
+1	1	rs6663855	rs223226	18643577	18650794	7217	6	del
+1	1	kgp15160198	kgp15297026	19208316	19217299	8983	7	del
+1	1	chr1_21894307_C_T	rs10917023	21894307	21925603	31296	9	del
+```

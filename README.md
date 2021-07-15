@@ -19,9 +19,8 @@ install.packages("devtools")
 library(devtools)
 install_github("FeifeiXiaoUSC/modSaRa",subdir="package")
 install_github("FeifeiXiaoUSC/modSaRa2",subdir="Package")
-install_github("adamluo12/LDcnv")
-install_github("adamluo12/CORRseq")
-install_github("adamluo12/SARAseq")
+install_github("FeifeiXiaoUSC/CORRseq-and-SARAseq/tree/main/CORRseq")
+install_github("FeifeiXiaoUSC/CORRseq-and-SARAseq/tree/main/SARAseq")
 ```
 CODEX2 (https://github.com/yuchaojiang/CODEX2)
 ```r

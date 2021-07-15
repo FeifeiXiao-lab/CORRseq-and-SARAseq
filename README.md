@@ -52,7 +52,7 @@ The default normalization method for **CORRseq** is EXCAVATOR2 median normalizat
 ```r
 EXCAVATOR2> perl EXCAVATORDataAnalysis.pl ExperimentalFileAnalysis.w50K.txt --processors 6 --target MyTarget_w50K --assembly hg19 --output /.../OutEXCAVATOR2/Results_MyProject_w50K --mode ...
 ```
-log2R-MED for one sample:
+log2R-MED (Log2R) for one sample:
 ```r
 Chromosome	Position	Start	End	Log2R	SegMean	Class
 1	20201	10202	30201	0.542625446945389	0.363527762355447	OUT

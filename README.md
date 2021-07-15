@@ -18,7 +18,6 @@ CORRseq and SARAseq
 install.packages("devtools")
 library(devtools)
 install_github("FeifeiXiaoUSC/modSaRa",subdir="package")
-install_github("FeifeiXiaoUSC/modSaRa2",subdir="Package")
 install_github("FeifeiXiaoUSC/CORRseq-and-SARAseq",subdir = "CORRseq")
 install_github("FeifeiXiaoUSC/CORRseq-and-SARAseq",subdir = "SARAseq")
 ```

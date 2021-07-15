@@ -82,14 +82,15 @@ SARAseq(log2R-PLF, map)
 
 The output file is tab delimited and has 9 columns with rows corresponding to CNV events. The columns include sample names, chromosome, CNV start marker, CNV end marker, CNV start position, CNV end position, CNV length in b, CNV length in markers, CNV status (deletion or duplication).
 ```r
-1	1	rs3765736	chr1_3696000_C_T	3616601	3696000	79399	18	del
-1	1	chr1_6504890_C_T	rs2986739	6504890	6548056	43166	6	del
-1	1	chr1_10674492_C_T	chr1_10766389_C_T	10674492	10766389	91897	44	del
-1	1	chr1_10871049_A_C	chr1_10879164_C_T	10871049	10879164	8115	6	del
-1	1	chr1_11002579_A_C	exm13826	11002579	11009716	7137	6	del
-1	1	rs9430624	rs3737967	11763677	11847449	83772	48	del
-1	1	rs848428	chr1_12923108_C_T	12866590	12923108	56518	11	del
-1	1	rs6663855	rs223226	18643577	18650794	7217	6	del
-1	1	kgp15160198	kgp15297026	19208316	19217299	8983	7	del
-1	1	chr1_21894307_C_T	rs10917023	21894307	21925603	31296	9	del
+   V1 V2                V3                V4       V5       V6    V7 V8  V9
+1   1  1         rs3765736  chr1_3696000_C_T  3616601  3696000 79399 18 del
+2   1  1  chr1_6504890_C_T         rs2986739  6504890  6548056 43166  6 del
+3   1  1 chr1_10674492_C_T chr1_10766389_C_T 10674492 10766389 91897 44 del
+4   1  1 chr1_10871049_A_C chr1_10879164_C_T 10871049 10879164  8115  6 del
+5   1  1 chr1_11002579_A_C          exm13826 11002579 11009716  7137  6 del
+6   1  1         rs9430624         rs3737967 11763677 11847449 83772 48 del
+7   1  1          rs848428 chr1_12923108_C_T 12866590 12923108 56518 11 del
+8   1  1         rs6663855          rs223226 18643577 18650794  7217  6 del
+9   1  1       kgp15160198       kgp15297026 19208316 19217299  8983  7 del
+10  1  1 chr1_21894307_C_T        rs10917023 21894307 21925603 31296  9 del
 ```

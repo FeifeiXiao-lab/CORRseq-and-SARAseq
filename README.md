@@ -1,5 +1,5 @@
 # CORRseq and SARAseq
-Copy number variation detection by whole-exome-sequencing (WES) data.
+Copy number variation detection with whole-exome-sequencing (WES) data.
 ## Author
 Fei Qin, Xizhi Luo, Guoshuai Cai, Feifei Xiao
 ## Description
